@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yidianhulian.secrettalk"
+    android:versionCode="3"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    <!-- Required环信 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <!-- 鹰眼 -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="YDSecretTalkApplication"
+        android:theme="@style/AppTheme" >
+        
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="ydhl#ydmiliao" />
+        <!-- Required SDK核心功能-->
+        <service android:name="com.easemob.chat.EMChatService" />
+        
+        <activity
+            android:name=".activity.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.MainActivity"
+             >
+        </activity>
+        <activity
+            android:name=".activity.Welcome"
+             >
+        </activity>
+        <activity
+            android:name=".activity.TalkerListActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name=".activity.LogoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" 
+             >
+        </activity>
+        <activity
+            android:name=".activity.MsgDetailsActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name=".activity.RoomDetailsActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name=".activity.MemberActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        
+        <activity
+            android:name=".activity.NoNetActivity"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity 
+            android:name=".activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle"></activity>
+        <activity
+            android:name=".activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" ></activity>
+        <activity
+            android:name=".activity.ExitTalkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" ></activity>
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name=".activity.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" ></activity>
+        
+        <activity
+            android:name=".activity.EnterPwdActivity"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        <activity
+            android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+			android:name="com.ad.android.sdk.api.AdWallActivity"
+			android:launchMode="singleTop"
+			android:configChanges="orientation|keyboardHidden" >
+		</activity>
+		<activity
+			android:name="com.ad.android.sdk.api.AppDetailActivity"
+			android:launchMode="singleTop"
+			android:configChanges="orientation|keyboardHidden" >
+		</activity>
+		<service
+			android:name="com.ad.android.sdk.api.AdDownloadService"
+			>
+		</service>
+    </application>
+
+</manifest>

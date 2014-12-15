@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+ <ImageView
+        android:id="@+id/room_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/room" />
+
+    <TextView
+        android:id="@+id/talker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/room_image"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/room_image"
+        android:text="房间名称"
+        android:textColor="@color/launch_btn_text"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/msg_no_talker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/talker_name"
+        android:layout_alignBottom="@+id/talker_name"
+        android:layout_alignParentRight="true"
+        android:text="等待对方加入"
+        android:textColor="@color/launch_text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/msg_has_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/room_image"
+        android:background="@drawable/news"
+        android:gravity="center"
+        android:textColor="@color/launch_btn_text"
+        android:visibility="gone" />
+
+</RelativeLayout>

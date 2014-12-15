@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/enter_talk"
+        android:icon="@drawable/enter"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/enter_talk"/>
+
+</menu>

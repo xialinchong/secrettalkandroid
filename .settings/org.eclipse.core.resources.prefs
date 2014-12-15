@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/com/yidianhulian/secrettalk/adapter/MessageAdapter.java=UTF-8
+encoding//src/com/yidianhulian/secrettalk/adapter/VoicePlayClickListener.java=UTF-8
+encoding//src/com/yidianhulian/secrettalk/fragment/ImageGridFragment.java=UTF-8
+encoding//src/com/yidianhulian/secrettalk/task/LoadImageTask.java=UTF-8
+encoding//src/com/yidianhulian/secrettalk/utils/CommonUtils.java=UTF-8
+encoding//src/com/yidianhulian/secrettalk/utils/PreferenceUtils.java=UTF-8
+encoding//src/com/yidianhulian/secrettalk/utils/Util.java=UTF-8
+encoding//src/com/yidianhulian/secrettalk/widget/PasteEditText.java=UTF-8
+encoding/<project>=UTF-8

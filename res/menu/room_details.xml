@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/look_room"
+        android:icon="@drawable/room_details"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/look_room"/>
+
+</menu>
